@@ -1,4 +1,4 @@
-current_age = input('Please enter current age: ')
+current_age = input('How old are you? ')
 age = int(current_age)
 
 future_year = 2050
