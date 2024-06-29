@@ -3,4 +3,4 @@ X = number
 for num in range (1,11):
     Y = num
     Z = Y * X
-    print(f"{X} * {Y} = {Z}")
+    print(f"{number} * {Y} = {Z}")
