@@ -13,13 +13,13 @@ def main():
     temperature = float(input("Enter the temperature: "))
     unit = input("Enter the unit if it is Celsius/Fahrenheit? C/F: ")
     if unit == 'C':
-        converted_to_fahrenheit = convert_to_fahrenheit
+        converted_to_fahrenheit = convert_to_fahrenheit(temperature)
         print(f"{temperature}°C is {converted_to_fahrenheit}°F")
     elif unit == 'F':
-        converted_to_celsius = convert_to_celsius
+        converted_to_celsius = convert_to_celsius(temperature)
         print(f"{temperature}°F is {converted_to_celsius}°C")
     else:
         print('Invalid temperature. Please enter a numeric value.')
-    
-    if __name__ == "__main__":
-        main()
+        
+if __name__ == "__main__":
+    main()
