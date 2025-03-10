@@ -16,7 +16,7 @@ class SimpleCalculator:
         return a * b
 
     def divide(self, a, b):
-        """Return the division of a by b and returns None if b is zero."""
+        """Return the division of a by b. Returns None if b is zero."""
         if b == 0:
             return None
         return a / b
