@@ -1,9 +1,9 @@
 def display_menu():
-    print("Shopping List Manager")
+    print("\nShopping List Manager")
     print("1. Add Item")
     print("2. Remove Item")
     print("3. View List")
-    print("4. Exit")
+    print("4. Exit\n")
     print("Choose 1, 2, 3 or 4")
 
 def main():
@@ -22,14 +22,14 @@ def main():
             # Prompt for and to remove an item
             item = input('Enter the item to remove: ')
             if item in shopping_list:
-                shopping_list.append(item)
-                print (f"added {item} to the list")
+                shopping_list.remove(item)
+                print (f"removed {item} from the list")
             else:
                 print(f"{item} not found in shopping list.")
             pass
         elif choice == '3':
             # Display the shopping list
-            print(shopping_list)
+            print("\nShopping list has:")
             for i in shopping_list:
                 print(i)
             pass
